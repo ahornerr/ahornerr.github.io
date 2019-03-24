@@ -2,10 +2,11 @@
  ---
 
 @import "{{ site.theme }}";
-.credits {
+
+#header {
   display: none;
 }
 
-.header {
- display: none;
+.credits {
+  display: none;
 }
