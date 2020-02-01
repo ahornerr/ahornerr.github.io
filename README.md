@@ -1,3 +1,6 @@
+# [Resume](Andy%20Horner%20Resume.pdf)
+The latest revision of my resume can be found at the above link.
+
 # Open Source Projects
 ## [ahornerr/go-dash-button](https://github.com/ahornerr/go-dash-button)
 A library and sample application for performing events when Amazon Dash buttons connect to a WiFi network
