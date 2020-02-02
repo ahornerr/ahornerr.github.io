@@ -1,3 +1,10 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-slate
 title: Andy Horner
-description: Software developer. Travel hacker. Technology enthusiast.<br><a href="Andy%20Horner%20Resume.pdf">Current resume is available here</a>
+description: Software developer. Travel hacker. Technology enthusiast.
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

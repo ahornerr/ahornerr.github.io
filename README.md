@@ -1,9 +1,19 @@
+---
+---
 # Overview
 Andy Horner is a problem solving developer looking to automate his entire life. This portfolio is an incomplete catalog of my projects, open source contributions, and a handful of hobbies in blog format. 
 
 # Open Source Projects
+
 ## [ahornerr/go-dash-button](https://github.com/ahornerr/go-dash-button)
 A library and sample application for performing events when Amazon Dash buttons connect to a WiFi network
+
+# Personal Projects
+
+{% for post in site.posts %}
+### [{{post.title}}]({{post.url}})
+{{post.excerpt}}
+{% endfor %}
 
 # Open Source Contributions
 
