@@ -1,5 +1,5 @@
 # Overview
-Andy Horner is a problem solving developer looking to automate his entire life. This portfolio is an incomplete catalog of my open source projects, contributions, and a handful of hobbies in blog format. 
+Andy Horner is a problem solving developer looking to automate his entire life. This portfolio is an incomplete catalog of my projects, open source contributions, and a handful of hobbies in blog format. 
 
 # Open Source Projects
 ## [ahornerr/go-dash-button](https://github.com/ahornerr/go-dash-button)
