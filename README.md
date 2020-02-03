@@ -5,16 +5,6 @@ I am a problem solving developer looking to improve my life via software and aut
 ### [ahornerr/go-dash-button](https://github.com/ahornerr/go-dash-button)
 A library and sample application for performing events when Amazon Dash buttons connect to a WiFi network
 
-{% assign psize = site.posts | size %}
-{% if psize > 0 %}
-## Project Blog Posts
-
-{% for post in site.posts %}
-### [{{post.title}}]({{post.url}})
-{{post.excerpt}}
-{% endfor %}
-{% endif %}
-
 ## Open Source Contributions
 
 ### gorilla/handlers
