@@ -1,5 +1,3 @@
----
----
 I am a problem solving developer looking to improve my life via software and automation. This portfolio is an incomplete catalog of my projects, open source contributions, and a handful of hobbies in blog format. 
 
 ## Open Source Projects
