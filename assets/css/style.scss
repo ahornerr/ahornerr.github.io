@@ -19,11 +19,12 @@
 }
 
 #resume_banner > span {
-  width: 100%;
+  width: 25px;
+  padding-left: 10px;
   height: 100%;
   top: 0;
   position: absolute;
-  background: url("../images/pdf-outline.png") no-repeat 5% 40%;
+  background: url("../images/pdf-outline.png") no-repeat 100% 40%;
   background-size: 25px 25px;
   filter: contrast(0.5) brightness(4);
 }
