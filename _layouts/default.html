@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
     {% seo %}
@@ -15,10 +15,15 @@
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
     <header class="inner">
-        <a id="resume_banner" href="Andy_Horner_Resume.pdf">Andy's Resume<span/></a>
-
         <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-        <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+        <p id="project_tagline">{{ site.description | default: site.github.project_tagline }}</p>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/contributions.html' | relative_url }}">Contributions</a>
+            <a class="site-nav__action" href="https://github.com/ahornerr">GitHub profile</a>
+            <a class="site-nav__action" href="{{ '/Andy_Horner_Resume.pdf' | relative_url }}">Resume (PDF)</a>
+        </nav>
 
         {% if site.show_downloads %}
         <section id="downloads">
@@ -31,26 +36,29 @@
 
 <!-- MAIN CONTENT -->
 <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-        {% if page.title %}
-            <h1>{{page.title}}</h1>
+    <main id="main_content" class="inner">
+        {% if page.title and page.url != '/' and page.url != '/index.html' %}
+            <h2>{{page.title}}</h2>
         {% endif %}
         {{ content }}
-    </section>
+    </main>
 </div>
 
 <!-- FOOTER  -->
 <div id="footer_wrap" class="outer">
     <footer class="inner">
-        <h3 style="color: white">Pages</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
+        <nav aria-label="Footer navigation">
+            <h2 class="footer-heading">Explore</h2>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/contributions.html' | relative_url }}">Contributions</a></li>
             {% for post in site.posts %}
             <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </li>
             {% endfor %}
-        </ul>
+            </ul>
+        </nav>
 <!--        {% if site.github.is_project_page %}-->
 <!--        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>-->
 <!--        {% endif %}-->
